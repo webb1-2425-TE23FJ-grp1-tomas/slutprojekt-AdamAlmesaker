@@ -1,0 +1,43 @@
+
+@media screen and (min-width: 400px) {
+    
+    .body{
+        background-color: gray;
+    }
+    .container {
+       display: grid;
+       border: solid thin black;
+       width: 100%;
+    }
+    .meny{
+        background-color: gray;
+        height: 50px;
+        border: solid thin pink;
+       width: 100%;
+       justify-content: flex-end;
+    }
+    .knapp{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: lightblue;
+        justify-content: end;
+    }
+    .bild-info{
+        background-image: url('bilder/strandbastu.webp');
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+       background-color: red;
+       height: 30px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+       background-color: purple;
+       height: 300px;
+    }
+}
