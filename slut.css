@@ -1,20 +1,26 @@
 
-@media screen and (min-width: 400px) {
+
     
-    .body{
+    #body{
         background-color: gray;
+        border-style: dotted;
+        margin:auto;
     }
     .container {
        display: grid;
        border: solid thin black;
-       width: 100%;
+       max-width: 1200px;
+       margin:auto;
+       background-color: gray;
+
     }
     .meny{
-        background-color: gray;
+        background-image: url('bilder/nedladdning\ \(16\).webp');
         height: 50px;
         border: solid thin pink;
        width: 100%;
        justify-content: flex-end;
+
     }
     .knapp{
         width: 50px;
@@ -27,9 +33,21 @@
         background-image: url('bilder/strandbastu.webp');
         height: 500px;
     }
+
+ul{
+    list-style: none;
 }
 
-@media screen and (min-width: 800px) {
+.slutruta{
+    text-align: center;
+}
+
+#rutor{
+    margin:30px;
+    background-color:whitesmoke;
+}
+
+@media screen and (min-width: 700px) {
     .container {
        background-color: red;
        height: 30px;
