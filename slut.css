@@ -4,7 +4,13 @@
     #body{
         background-color: gray;
         border-style: dotted;
-        margin:auto;
+       
+    }
+
+    p{
+        margin: 20px;
+        color: blue;
+        row-gap: 15px;
     }
     .container {
        display: grid;
@@ -16,10 +22,10 @@
     }
     .meny{
         background-image: url('bilder/nedladdning\ \(16\).webp');
-        height: 50px;
         border: solid thin pink;
        width: 100%;
        justify-content: flex-end;
+       height: 125px;
 
     }
     .knapp{
@@ -30,8 +36,15 @@
         justify-content: end;
     }
     .bild-info{
-        background-image: url('bilder/strandbastu.webp');
-        height: 500px;
+        background-image: url('bilder/storbild.webp');
+        background-size: cover;
+        padding:30px; 
+        background-position: center center;
+    }
+    .inforuta1{  
+     background-color: whitesmoke;
+     padding-top: 10px;
+     padding-bottom: 10px;
     }
 
 ul{
@@ -50,7 +63,7 @@ ul{
 @media screen and (min-width: 700px) {
     .container {
        background-color: red;
-       height: 30px;
+  
     }
 }
 @media screen and (min-width: 1200px) {
