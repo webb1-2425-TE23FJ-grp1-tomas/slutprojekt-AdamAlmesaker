@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 
     
     #body{
@@ -7,6 +9,9 @@
        
     }
 
+    h2{
+        
+    }
     p{
         margin: 20px;
         color: #0000ff;
@@ -29,12 +34,36 @@
        
 
     }
+
+    nav {
+    
+        overflow: hidden;
+      }
+  
+      nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        
+      }
+
+      
     .knapp{
-        width: 50px;
-        height: 50px;
-        border-radius: 10px;
-        background-color: lightblue;
-        justify-content: end;
+        background-color: #87CEEB; 
+        cursor: pointer; 
+        transition: background-color 0.3s ease; /* Mjuk övergång för hover-effekt */
+        display: flex; /* För att centrera innehållet inuti knappen */
+        justify-content: center;
+        align-items: center;
+        border: none; /* Ta bort standardborder */
+        position:fixed;
+        z-index: 1000;
     }
     .bild-info{
         background-image: url('bilder/storbild.webp');
@@ -53,8 +82,21 @@ ul{
 }
 
 .x6bildruta{
-height: 10px;
+border-style:dotted;
+
+align-self: center;
+display:grid;
+grid-template-columns: 1fr 1fr;
+
+
+}
+.x6bildruta img{
+width: 100%; 
+margin:0;
+padding:1%;
 object-fit: contain;
+/* display: block; */
+
 }
 
 .slutruta{
@@ -62,7 +104,7 @@ object-fit: contain;
 }
 
 #rutor{
-    margin:30px;
+    margin:30px;   
     background-color:whitesmoke;
 }
 
@@ -70,6 +112,11 @@ object-fit: contain;
     .container {
        background-color: red;
   
+    }
+
+    .x6bildruta {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
     }
 }
 @media screen and (min-width: 1200px) {
