@@ -23,7 +23,7 @@
       }
 
     li a{
-
+        
     }
 
 
@@ -35,7 +35,7 @@
 
     }
     .meny{
-        background-image: url('bilder-bastu/forsta-ruta.webp');
+        background-image: url('bilder/forsta-ruta.webp');
         border: solid thin pink;    
        width: 100%;
        justify-content: flex-end;
@@ -79,7 +79,7 @@
     }
     .bild-info{
         margin:20px;
-        background-image: url('bilder-bastu/storbild.webp');
+        background-image: url('bilder-hotell/storbild.webp');
         background-size: cover;
         padding:30px; 
         background-position: center center;
