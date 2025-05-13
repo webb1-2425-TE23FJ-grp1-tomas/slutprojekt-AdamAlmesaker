@@ -36,7 +36,6 @@
   }
   .meny{
       background-image: url('bilder/forsta-ruta.webp');
-      border: solid thin pink;    
      width: 100%;
      justify-content: flex-end;
      height: 125px;

@@ -35,8 +35,7 @@
 
     }
     .meny{
-        background-image: url('bilder/forsta-ruta.webp');
-        border: solid thin pink;    
+         background-image: url('bilder-hotell/hotellhuvud.webp');  
        width: 100%;
        justify-content: flex-end;
        height: 125px;
@@ -79,12 +78,12 @@
     }
     .bild-info{
         margin:20px;
-        background-image: url('bilder-hotell/storbild.webp');
+        background-image: url('bilder-hotell/info.webp');
         background-size: cover;
         padding:30px; 
         background-position: center center;
     }
-    .inforuta1{  
+    .inforuta{  
      background-color: whitesmoke;
      padding-top: 10px;
      padding-bottom: 10px;

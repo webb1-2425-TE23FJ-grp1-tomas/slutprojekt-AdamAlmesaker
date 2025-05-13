@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+       max-width: 1200px;
+       margin:auto;
+}
+
+.hotell{
+    background-color: pink;
+    
+}
+.bastu{
+    background-color: yellow;
+}
+@media screen and (min-width: 400px) {
+    .container {
+      
+  
+    }
+
+    li{
+        font-size: small;
+    }
+
+    p{
+        font-size: small;
+    }
+
+    h1{
+        font-size: x-large
+    }
+    .x6bildruta {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+      
+  
+    }
+
+    li{
+        font-size: medium;
+    }
+
+    p{
+        font-size: medium;
+    }
+    h1{
+        font-size: xx-large
+    }
+    .x6bildruta {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+ 
+     
+    }
+    li{
+        font-size:large; 
+    }
+    p{
+        font-size: large;
+    }
+    h1{
+        font-size: xx-large;
+    }
+}
