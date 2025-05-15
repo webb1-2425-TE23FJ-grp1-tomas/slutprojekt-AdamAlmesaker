@@ -3,10 +3,6 @@
 }
 
   
-  #body{
-     
-     
-  }
 
   h1{
      padding-left: 20px;
@@ -35,7 +31,7 @@
 
   }
   .meny{
-      background-image: url('bilder/forsta-ruta.webp');
+      background-image: url('bilder-bastu/forsta-ruta.webp');
      width: 100%;
      justify-content: flex-end;
      height: 125px;
@@ -78,15 +74,16 @@
   }
   .bild-info{
       margin:20px;
-      background-image: url('bilder-hotell/storbild.webp');
+      background-image: url('bilder-bastu/storbild.webp');
       background-size: cover;
       padding:30px; 
       background-position: center center;
   }
-  .inforuta1{  
+  #inforuta1{  
    background-color: whitesmoke;
    padding-top: 10px;
    padding-bottom: 10px;
+   
   }
 
 ul{
@@ -109,11 +106,11 @@ object-fit: contain;
 
 }
 
-.slutruta{
+#slutruta{
   text-align: center;
 }
 
-#rutor{
+.rutor{
   margin:30px;   
   background-color:whitesmoke;
   border-radius: 15px;

@@ -1,76 +1,200 @@
 *{
     box-sizing: border-box;
 }
-.container{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-       max-width: 1200px;
-       margin:auto;
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    margin:auto;
 }
 
-.hotell{
-    background-color: pink;
-    
+.container {
+    display: grid;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgb(226, 225, 225);
 }
-.bastu{
-    background-color: yellow;
+
+.meny{
+    background-image: url('bilder-hotell/hotellhuvud.webp'); /* Anpassa bild */
+    width: 100%;
+    justify-content: flex-end;
+    height: 125px;
+    background-size: cover;
+    background-position: center center;
 }
-@media screen and (min-width: 400px) {
-    .container {
-      
-  
-    }
 
-    li{
-        font-size: small;
-    }
+.meny nav {
+    overflow: hidden;
+}
 
-    p{
-        font-size: small;
-    }
+.meny nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
 
-    h1{
-        font-size: x-large
-    }
-    .x6bildruta {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-    }
+.meny nav a:hover { 
+       justify-content: flex-end;
+       background-size: cover;
+       background-position: center center;
+}
+
+.knapp{
+    background-color: lightcoral;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position:fixed;
+    z-index: 1000;
+}
+
+.rutor {
+    margin: 30px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+h1, h2 {
+    padding-left: 20px;
+}
+
+p {
+    margin: 20px;
+}
+
+#bokningsformular {
+    padding: 20px;
+}
+
+.form-grupp {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: lightcoral;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e07a6f;
+}
+
+#kontaktinfo {
+    text-align: center;
+    padding: 20px;
+}
+
+#slutruta {
+    text-align: center;
+    padding: 20px;
+    font-size: small;
+}
+
+#slutruta ul {
+    list-style: none;
+    padding: 0;
+}
+
+#slutruta li {
+    margin-bottom: 5px;
 }
 
 @media screen and (min-width: 700px) {
-    .container {
-      
-  
+    .form-grupp {
+        display: flex;
+        align-items: center;
     }
 
-    li{
-        font-size: medium;
+    label {
+        width: 150px;
+        text-align: left;
+        margin-right: 15px;
     }
 
-    p{
-        font-size: medium;
-    }
-    h1{
-        font-size: xx-large
-    }
-    .x6bildruta {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    select,
+    textarea {
+        width: calc(100% - 165px);
     }
 }
+
 @media screen and (min-width: 1200px) {
-    .container {
- 
-     
+    h1 {
+        font-size: xx-large;
     }
-    li{
-        font-size:large; 
+
+    h2 {
+        font-size: x-large;
     }
-    p{
+
+    p {
         font-size: large;
     }
-    h1{
-        font-size: xx-large;
+
+    label {
+        font-size: 1.1em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    select,
+    textarea {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+
+    .slutruta {
+        font-size: medium;
     }
 }

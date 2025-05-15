@@ -83,7 +83,7 @@
         padding:30px; 
         background-position: center center;
     }
-    .inforuta{  
+    #inforuta{  
      background-color: whitesmoke;
      padding-top: 10px;
      padding-bottom: 10px;
@@ -113,7 +113,7 @@ object-fit: contain;
     text-align: center;
 }
 
-#rutor{
+.rutor{
     margin:30px;   
     background-color:whitesmoke;
     border-radius: 15px;

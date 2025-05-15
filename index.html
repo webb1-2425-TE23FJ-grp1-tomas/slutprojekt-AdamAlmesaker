@@ -1,39 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>AdamsStrandService</title>
+    <title>AdamsStrandService - Bokning</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="libs/simple-lightbox.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-
-    
 </head>
-<div class="container"> 
-    <div class="hotell">
-<p> snoippp</p>
+<div class="container">
+    <div class="meny">
+        <div class="knapp">
+            <nav>
+                <a href="hotell.html">Hotell</a>
+                <a href="bastu.html">Bastu</a>
+                <a href="index.html">Bokningar</a>
+            </nav>
+        </div>
     </div>
-    <div class="bastu">
-<p> kukhuve</p>
+    <div class="rutor" id="forsta-text">
+        <h1>Boka din upplevelse hos oss</h1>
+        <p>Här kan du enkelt skicka en bokningsförfrågan för hotell, bastu eller våra olika paket. Fyll i formuläret nedan med dina önskemål så återkommer vi så snart som möjligt med en bekräftelse.</p>
     </div>
 
+    <div class="rutor" id="bokningsformular">
+        <h2>Bokningsförfrågan</h2>
+        <form action="#" method="post">
+            <div class="form-grupp">
+                <label for="namn">Namn:</label>
+                <input type="text" id="namn" name="namn" required>
+            </div>
 
-<body>
+            <div class="form-grupp">
+                <label for="epost">E-post:</label>
+                <input type="email" id="epost" name="epost" required>
+            </div>
 
+            <div class="form-grupp">
+                <label for="telefon">Telefonnummer:</label>
+                <input type="tel" id="telefon" name="telefon">
+            </div>
 
+            <div class="form-grupp">
+                <label for="typ">Jag vill boka:</label>
+                <select id="typ" name="typ">
+                    <option value="hotell">Hotellrum</option>
+                    <option value="bastu">Bastu</option>
+                    <option value="bastupaket">Bastu & Boendepaket</option>
+                    <option value="annat">Annat</option>
+                </select>
+            </div>
 
+            <div class="form-grupp">
+                <label for="ankomst">Ankomstdatum:</label>
+                <input type="date" id="ankomst" name="ankomst">
+            </div>
 
+            <div class="form-grupp">
+                <label for="avresa">Avresedatum (hotell/paket):</label>
+                <input type="date" id="avresa" name="avresa">
+            </div>
 
+            <div class="form-grupp">
+                <label for="antal_personer">Antal personer:</label>
+                <input type="number" id="antal_personer" name="antal_personer" min="1">
+            </div>
+
+            <div class="form-grupp">
+                <label for="meddelande">Övriga önskemål eller meddelanden:</label>
+                <textarea id="meddelande" name="meddelande" rows="5"></textarea>
+            </div>
+
+            <button type="submit">Skicka bokningsförfrågan</button>
+        </form>
+    </div>
+
+    <div class="rutor" id="kontaktinfo">
+        <h2>Har du frågor? Kontakta oss!</h2>
+        <p>Telefon: <a href="tel:0494-79265464590">0494 - 792 90</a></p>
+        <p>E-post: <a href="mailto:bokning@adamsstrandsauna.se">bokning@adamsstrandsauna.se</a></p>
+    </div>
+
+    <div class="rutor" id="slutruta">
+        <ul>
+            <li>AdamsStrandService Fredrika Bremers Allé 2 590 46 Rimforsa</li>
+            <li>Telefon: <a href="tel:0494-79296660">0494 - 792 90</a> E-post: <a href="mailto:reception@adamsstrandsauna.se">reception@adamsstrandsauna.se</a> / <a href="mailto:bokning@adamsstrandsauna.se">bokning@adamsstrandsauna.se</a> </li>
+            <li>Samtliga priser på sidan är inklusive moms om inget annat anges</li>
+        </ul>
+    </div>
 </div>
-<script src='libs/simple-lightbox.min.js'></script>
-<script>
-    let lightbox = new SimpleLightbox('.x6bildruta a', { /* options */ });
-</script>
 </body>
 </html>
-
-
-
-
-
